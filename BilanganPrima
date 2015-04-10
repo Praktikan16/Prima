@@ -28,6 +28,7 @@ public class BilanganPrima {
         System.out.println("OUTPUT");
         System.out.println("Deret Bilangan Prima Antara "+b1+" dan "+b2);
         int x=b1;
+        int sum=0;
         while(x<=b2){
             boolean prima=true;
             for(int b=2;b<x;b++){
@@ -36,9 +37,10 @@ public class BilanganPrima {
                 }
             }
             if(prima){
-                System.out.print(x+" ");
+                sum=sum+x;
             }
             x++;
         }
+        System.out.println("Hasil Penjumlahan : "+sum);
     }
 }
