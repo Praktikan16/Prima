@@ -27,8 +27,8 @@ public class BilanganPrima {
         b2=in.nextInt();
         System.out.println("OUTPUT");
         System.out.println("Deret Bilangan Prima Antara "+b1+" dan "+b2);
-        int x=b1;
-        while(x<=b2){
+        int x=b2;
+        while(x<=b1){
             boolean prima=true;
             for(int b=2;b<x;b++){
                 if(x%b==0){
@@ -38,7 +38,7 @@ public class BilanganPrima {
             if(prima){
                 System.out.print(x+" ");
             }
-            x++;
+            x--;
         }
     }
 }
